@@ -9,9 +9,9 @@ from deep_translator import GoogleTranslator
 # ==============================================================================
 @st.cache_resource
 def load_data():
-    movies_small = joblib.load('movie_data.pkl')
-    cosine_sim = joblib.load('cosine_sim.pkl')
-    indices = joblib.load('indices.pkl')
+    movies_small = joblib.load('Models/movie_data.pkl')
+    cosine_sim = joblib.load('Models/cosine_sim.pkl')
+    indices = joblib.load('Models/indices.pkl')
     return movies_small, cosine_sim, indices
 
 movies_small, cosine_sim, indices = load_data()
